@@ -1,0 +1,8 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | valor
+linha 1    | ATRIBUICAO            | =
+linha 1    | NUMBER                | 1                      => 1
+linha 1    | NUMBER                | 2                      => 2
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 7 | Erros: 1

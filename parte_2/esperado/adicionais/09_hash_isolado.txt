@@ -1,0 +1,11 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | COMENTARIO_LINHA      | #coment comentario valido
+linha 3    | ERRO_LEXICO: marcador de comentario invalido | #
+linha 4    | KEYWORD               | mostre
+linha 4    | DELIMITADOR           | (
+linha 4    | TEXTO                 | ’depois’
+linha 4    | DELIMITADOR           | )
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | KEYWORD               | fim
+Total de tokens/eventos: 9 | Erros: 1

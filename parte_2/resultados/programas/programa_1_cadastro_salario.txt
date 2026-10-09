@@ -1,0 +1,111 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 3    | KEYWORD               | inteiro
+linha 3    | IDENTIFICADOR         | idade
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | KEYWORD               | inteiro
+linha 4    | IDENTIFICADOR         | dependentes
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | KEYWORD               | real
+linha 5    | IDENTIFICADOR         | salario
+linha 5    | FIM_INSTRUCAO         | $
+linha 6    | KEYWORD               | real
+linha 6    | IDENTIFICADOR         | bonus
+linha 6    | FIM_INSTRUCAO         | $
+linha 7    | KEYWORD               | real
+linha 7    | IDENTIFICADOR         | salario_final
+linha 7    | FIM_INSTRUCAO         | $
+linha 8    | KEYWORD               | texto
+linha 8    | IDENTIFICADOR         | nome
+linha 8    | FIM_INSTRUCAO         | $
+linha 10   | IDENTIFICADOR         | nome
+linha 10   | ATRIBUICAO            | =
+linha 10   | TEXTO                 | ’Maria’
+linha 10   | FIM_INSTRUCAO         | $
+linha 11   | IDENTIFICADOR         | idade
+linha 11   | ATRIBUICAO            | =
+linha 11   | INTEIRO               | 35                     => 35
+linha 11   | FIM_INSTRUCAO         | $
+linha 12   | IDENTIFICADOR         | dependentes
+linha 12   | ATRIBUICAO            | =
+linha 12   | INTEIRO               | 2                      => 2
+linha 12   | FIM_INSTRUCAO         | $
+linha 14   | IDENTIFICADOR         | salario
+linha 14   | ATRIBUICAO            | =
+linha 14   | REAL                  | 4500,00                => 4500
+linha 14   | FIM_INSTRUCAO         | $
+linha 15   | IDENTIFICADOR         | bonus
+linha 15   | ATRIBUICAO            | =
+linha 15   | IDENTIFICADOR         | salario
+linha 15   | ARITMETICO            | *
+linha 15   | REAL                  | 0,10                   => 0.1
+linha 15   | FIM_INSTRUCAO         | $
+linha 16   | IDENTIFICADOR         | salario_final
+linha 16   | ATRIBUICAO            | =
+linha 16   | IDENTIFICADOR         | salario
+linha 16   | ARITMETICO            | +
+linha 16   | IDENTIFICADOR         | bonus
+linha 16   | FIM_INSTRUCAO         | $
+linha 18   | KEYWORD               | mostre
+linha 18   | DELIMITADOR           | (
+linha 18   | TEXTO                 | ’Nome: ’
+linha 18   | DELIMITADOR           | )
+linha 18   | FIM_INSTRUCAO         | $
+linha 19   | KEYWORD               | mostre
+linha 19   | DELIMITADOR           | (
+linha 19   | IDENTIFICADOR         | nome
+linha 19   | DELIMITADOR           | )
+linha 19   | FIM_INSTRUCAO         | $
+linha 21   | KEYWORD               | mostre
+linha 21   | DELIMITADOR           | (
+linha 21   | TEXTO                 | ’Idade: ’
+linha 21   | DELIMITADOR           | )
+linha 21   | FIM_INSTRUCAO         | $
+linha 22   | KEYWORD               | mostre
+linha 22   | DELIMITADOR           | (
+linha 22   | IDENTIFICADOR         | idade
+linha 22   | DELIMITADOR           | )
+linha 22   | FIM_INSTRUCAO         | $
+linha 24   | KEYWORD               | mostre
+linha 24   | DELIMITADOR           | (
+linha 24   | TEXTO                 | ’Dependentes: ’
+linha 24   | DELIMITADOR           | )
+linha 24   | FIM_INSTRUCAO         | $
+linha 25   | KEYWORD               | mostre
+linha 25   | DELIMITADOR           | (
+linha 25   | IDENTIFICADOR         | dependentes
+linha 25   | DELIMITADOR           | )
+linha 25   | FIM_INSTRUCAO         | $
+linha 27   | KEYWORD               | mostre
+linha 27   | DELIMITADOR           | (
+linha 27   | TEXTO                 | ’Salario final: ’
+linha 27   | DELIMITADOR           | )
+linha 27   | FIM_INSTRUCAO         | $
+linha 28   | KEYWORD               | mostre
+linha 28   | DELIMITADOR           | (
+linha 28   | IDENTIFICADOR         | salario_final
+linha 28   | DELIMITADOR           | )
+linha 28   | FIM_INSTRUCAO         | $
+linha 30   | COMENTARIO_LINHA      | #coment calculo adicional para dependentes
+linha 31   | IDENTIFICADOR         | salario_final
+linha 31   | ATRIBUICAO            | =
+linha 31   | IDENTIFICADOR         | salario_final
+linha 31   | ARITMETICO            | +
+linha 31   | DELIMITADOR           | (
+linha 31   | IDENTIFICADOR         | dependentes
+linha 31   | ARITMETICO            | *
+linha 31   | REAL                  | 150,00                 => 150
+linha 31   | DELIMITADOR           | )
+linha 31   | FIM_INSTRUCAO         | $
+linha 33   | KEYWORD               | mostre
+linha 33   | DELIMITADOR           | (
+linha 33   | TEXTO                 | ’Salario com beneficio: ’
+linha 33   | DELIMITADOR           | )
+linha 33   | FIM_INSTRUCAO         | $
+linha 34   | KEYWORD               | mostre
+linha 34   | DELIMITADOR           | (
+linha 34   | IDENTIFICADOR         | salario_final
+linha 34   | DELIMITADOR           | )
+linha 34   | FIM_INSTRUCAO         | $
+linha 36   | KEYWORD               | fim
+Total de tokens/eventos: 109 | Erros: 0

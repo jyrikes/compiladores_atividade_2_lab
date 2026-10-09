@@ -1,0 +1,10 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | COMENTARIO_BLOCO      | /* inicio
+ * meio
+ * fim */
+linha 4    | KEYWORD               | const
+linha 4    | IDENTIFICADOR         | x
+linha 4    | ATRIBUICAO            | =
+linha 4    | NUMBER                | 1                      => 1
+linha 4    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 6 | Erros: 0

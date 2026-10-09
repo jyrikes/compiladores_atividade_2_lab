@@ -1,0 +1,12 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | url
+linha 1    | ATRIBUICAO            | =
+linha 1    | STRING                | "https://example.com/a//b"
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | s
+linha 1    | ATRIBUICAO            | =
+linha 1    | STRING                | "/* nao comentar */"
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 10 | Erros: 0

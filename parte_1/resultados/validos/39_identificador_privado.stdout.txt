@@ -1,0 +1,20 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | class
+linha 1    | IDENTIFICADOR         | Conta
+linha 1    | DELIMITADOR           | {
+linha 1    | IDENTIFICADOR_PRIVADO | #saldo
+linha 1    | ATRIBUICAO            | =
+linha 1    | NUMBER                | 10                     => 10
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | obter
+linha 1    | DELIMITADOR           | (
+linha 1    | DELIMITADOR           | )
+linha 1    | DELIMITADOR           | {
+linha 1    | KEYWORD               | return
+linha 1    | KEYWORD               | this
+linha 1    | ACESSO                | .
+linha 1    | IDENTIFICADOR_PRIVADO | #saldo
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | DELIMITADOR           | }
+linha 1    | DELIMITADOR           | }
+Total de tokens/eventos: 18 | Erros: 0

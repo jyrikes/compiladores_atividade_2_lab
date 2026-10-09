@@ -1,0 +1,1 @@
+const a=0xFF; const b=0X1a; const c=0xA_B_C; const d=0xff;

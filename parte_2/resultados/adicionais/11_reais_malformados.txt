@@ -1,0 +1,19 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | real
+linha 2    | IDENTIFICADOR         | x
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | IDENTIFICADOR         | x
+linha 3    | ATRIBUICAO            | =
+linha 3    | ERRO_LEXICO: numero real com multiplas virgulas | 2,0,5
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | IDENTIFICADOR         | x
+linha 4    | ATRIBUICAO            | =
+linha 4    | ERRO_LEXICO: ponto decimal nao permitido: use virgula | 3.1415
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | IDENTIFICADOR         | x
+linha 5    | ATRIBUICAO            | =
+linha 5    | ERRO_LEXICO: numero real incompleto | 1,
+linha 5    | FIM_INSTRUCAO         | $
+linha 6    | KEYWORD               | fim
+Total de tokens/eventos: 17 | Erros: 3

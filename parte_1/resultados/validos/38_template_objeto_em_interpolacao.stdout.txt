@@ -1,0 +1,18 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | texto
+linha 1    | ATRIBUICAO            | =
+linha 1    | TEMPLATE_ABRE         | `
+linha 1    | TEMPLATE_TEXTO        | valor=
+linha 1    | INTERPOLACAO_ABRE     | ${
+linha 1    | DELIMITADOR           | {
+linha 1    | IDENTIFICADOR         | a
+linha 1    | CONDICIONAL           | :
+linha 1    | NUMBER                | 1                      => 1
+linha 1    | DELIMITADOR           | }
+linha 1    | ACESSO                | .
+linha 1    | IDENTIFICADOR         | a
+linha 1    | INTERPOLACAO_FECHA    | }
+linha 1    | TEMPLATE_FECHA        | `
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 16 | Erros: 0

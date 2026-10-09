@@ -1,0 +1,13 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | elemento
+linha 1    | ATRIBUICAO            | =
+linha 1    | RELACIONAL            | <
+linha 1    | IDENTIFICADOR         | Botao
+linha 1    | IDENTIFICADOR         | texto
+linha 1    | ATRIBUICAO            | =
+linha 1    | STRING                | "Oi"
+linha 1    | ARITMETICO            | /
+linha 1    | RELACIONAL            | >
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 11 | Erros: 0

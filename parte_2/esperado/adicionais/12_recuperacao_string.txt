@@ -1,0 +1,17 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | texto
+linha 2    | IDENTIFICADOR         | nome
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | IDENTIFICADOR         | nome
+linha 3    | ATRIBUICAO            | =
+linha 3    | ERRO_LEXICO: string nao fechada antes de nova linha | ’incompleta
+linha 4    | KEYWORD               | inteiro
+linha 4    | IDENTIFICADOR         | idade
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | IDENTIFICADOR         | idade
+linha 5    | ATRIBUICAO            | =
+linha 5    | INTEIRO               | 18                     => 18
+linha 5    | FIM_INSTRUCAO         | $
+linha 6    | KEYWORD               | fim
+Total de tokens/eventos: 15 | Erros: 1

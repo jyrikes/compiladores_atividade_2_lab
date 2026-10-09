@@ -1,0 +1,20 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | COMENTARIO_LINHA      | #coment este comentario ocupa uma linha
+linha 3    | COMENTARIO_BLOCO      | {---\ncomentario de varias linhas\ncom { e } dentro\n---}
+linha 7    | KEYWORD               | se
+linha 7    | DELIMITADOR           | [
+linha 7    | IDENTIFICADOR         | a
+linha 7    | RELACIONAL            | <
+linha 7    | IDENTIFICADOR         | b
+linha 7    | DELIMITADOR           | ]
+linha 7    | KEYWORD               | faz
+linha 7    | DELIMITADOR           | {
+linha 8    | KEYWORD               | mostre
+linha 8    | DELIMITADOR           | (
+linha 8    | TEXTO                 | ’fim’
+linha 8    | DELIMITADOR           | )
+linha 8    | FIM_INSTRUCAO         | $
+linha 9    | DELIMITADOR           | }
+linha 10   | KEYWORD               | fim
+Total de tokens/eventos: 18 | Erros: 0

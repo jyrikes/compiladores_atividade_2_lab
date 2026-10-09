@@ -1,0 +1,19 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | RESERVADA_RESTRITA    | let
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | =
+linha 1    | NUMBER                | 0                      => 0
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | INCREMENTO            | ++
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | INCREMENTO            | ++
+linha 1    | IDENTIFICADOR         | x
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | INCREMENTO            | --
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | INCREMENTO            | --
+linha 1    | IDENTIFICADOR         | x
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 17 | Erros: 0

@@ -1,0 +1,4 @@
+linha 1 | ERRO_LEXICO: caractere nao reconhecido [Ã]
+linha 1 | ERRO_LEXICO: caractere nao reconhecido [©]
+linha 1 | ERRO_LEXICO: caractere nao reconhecido [Ã]
+linha 1 | ERRO_LEXICO: caractere nao reconhecido [¡]

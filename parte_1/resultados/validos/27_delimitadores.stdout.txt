@@ -1,0 +1,30 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | function
+linha 1    | IDENTIFICADOR         | f
+linha 1    | DELIMITADOR           | (
+linha 1    | IDENTIFICADOR         | a
+linha 1    | CONDICIONAL           | :
+linha 1    | CONTEXTUAL            | number
+linha 1    | DELIMITADOR           | ,
+linha 1    | IDENTIFICADOR         | b
+linha 1    | CONDICIONAL           | :
+linha 1    | CONTEXTUAL            | number
+linha 1    | DELIMITADOR           | )
+linha 1    | DELIMITADOR           | {
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | xs
+linha 1    | ATRIBUICAO            | =
+linha 1    | DELIMITADOR           | [
+linha 1    | IDENTIFICADOR         | a
+linha 1    | DELIMITADOR           | ,
+linha 1    | IDENTIFICADOR         | b
+linha 1    | DELIMITADOR           | ]
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | KEYWORD               | return
+linha 1    | IDENTIFICADOR         | xs
+linha 1    | DELIMITADOR           | [
+linha 1    | NUMBER                | 0                      => 0
+linha 1    | DELIMITADOR           | ]
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | DELIMITADOR           | }
+Total de tokens/eventos: 28 | Erros: 0

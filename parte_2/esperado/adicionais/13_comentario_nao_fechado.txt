@@ -1,0 +1,11 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | inteiro
+linha 2    | IDENTIFICADOR         | valor
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | IDENTIFICADOR         | valor
+linha 3    | ATRIBUICAO            | =
+linha 3    | INTEIRO               | 5                      => 5
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | ERRO_LEXICO: comentario de bloco nao fechado | {---\ncomentario sem fechamento\n
+Total de tokens/eventos: 9 | Erros: 1

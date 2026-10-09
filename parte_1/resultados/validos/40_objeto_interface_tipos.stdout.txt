@@ -1,0 +1,26 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | RESERVADA_RESTRITA    | interface
+linha 1    | IDENTIFICADOR         | Pessoa
+linha 1    | DELIMITADOR           | {
+linha 1    | IDENTIFICADOR         | nome
+linha 1    | CONDICIONAL           | :
+linha 1    | CONTEXTUAL            | string
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | idade
+linha 1    | CONDICIONAL           | ?
+linha 1    | CONDICIONAL           | :
+linha 1    | CONTEXTUAL            | number
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | DELIMITADOR           | }
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | p
+linha 1    | CONDICIONAL           | :
+linha 1    | IDENTIFICADOR         | Pessoa
+linha 1    | ATRIBUICAO            | =
+linha 1    | DELIMITADOR           | {
+linha 1    | IDENTIFICADOR         | nome
+linha 1    | CONDICIONAL           | :
+linha 1    | STRING                | "Ana"
+linha 1    | DELIMITADOR           | }
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 24 | Erros: 0

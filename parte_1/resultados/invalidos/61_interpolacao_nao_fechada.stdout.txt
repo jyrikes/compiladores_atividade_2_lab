@@ -1,0 +1,12 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | msg
+linha 1    | ATRIBUICAO            | =
+linha 1    | TEMPLATE_ABRE         | `
+linha 1    | TEMPLATE_TEXTO        | valor=
+linha 1    | INTERPOLACAO_ABRE     | ${
+linha 1    | NUMBER                | 10                     => 10
+linha 1    | ARITMETICO            | +
+linha 1    | NUMBER                | 20                     => 20
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 11 | Erros: 1

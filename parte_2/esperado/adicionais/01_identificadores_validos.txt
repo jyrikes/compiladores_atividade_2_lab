@@ -1,0 +1,21 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | inteiro
+linha 2    | KEYWORD               | repita
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | KEYWORD               | inteiro
+linha 3    | IDENTIFICADOR         | faca2
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | KEYWORD               | texto
+linha 4    | IDENTIFICADOR         | naoSei
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | KEYWORD               | real
+linha 5    | IDENTIFICADOR         | real_2
+linha 5    | FIM_INSTRUCAO         | $
+linha 6    | KEYWORD               | mostre
+linha 6    | DELIMITADOR           | (
+linha 6    | IDENTIFICADOR         | naoSei
+linha 6    | DELIMITADOR           | )
+linha 6    | FIM_INSTRUCAO         | $
+linha 7    | KEYWORD               | fim
+Total de tokens/eventos: 19 | Erros: 0

@@ -1,0 +1,26 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | real
+linha 2    | IDENTIFICADOR         | resultado
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | IDENTIFICADOR         | resultado
+linha 3    | ATRIBUICAO            | =
+linha 3    | DELIMITADOR           | (
+linha 3    | INTEIRO               | 20                     => 20
+linha 3    | ARITMETICO            | +
+linha 3    | REAL                  | 2,50                   => 2.5
+linha 3    | DELIMITADOR           | )
+linha 3    | ARITMETICO            | *
+linha 3    | INTEIRO               | 3                      => 3
+linha 3    | ARITMETICO            | -
+linha 3    | INTEIRO               | 10                     => 10
+linha 3    | ARITMETICO            | /
+linha 3    | INTEIRO               | 2                      => 2
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | KEYWORD               | mostre
+linha 4    | DELIMITADOR           | (
+linha 4    | IDENTIFICADOR         | resultado
+linha 4    | DELIMITADOR           | )
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | KEYWORD               | fim
+Total de tokens/eventos: 24 | Erros: 0

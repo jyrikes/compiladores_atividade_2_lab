@@ -1,0 +1,18 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | nome
+linha 1    | ATRIBUICAO            | =
+linha 1    | STRING                | "Ana"
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | mensagem
+linha 1    | ATRIBUICAO            | =
+linha 1    | TEMPLATE_ABRE         | `
+linha 1    | TEMPLATE_TEXTO        | Ola 
+linha 1    | INTERPOLACAO_ABRE     | ${
+linha 1    | IDENTIFICADOR         | nome
+linha 1    | INTERPOLACAO_FECHA    | }
+linha 1    | TEMPLATE_TEXTO        | !
+linha 1    | TEMPLATE_FECHA        | `
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 16 | Erros: 0

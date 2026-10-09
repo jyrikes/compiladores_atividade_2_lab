@@ -1,0 +1,14 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | inteiro
+linha 2    | ERRO_LEXICO: identificador nao pode iniciar com numero | 42abc
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | KEYWORD               | inteiro
+linha 3    | IDENTIFICADOR         | _42
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | IDENTIFICADOR         | _42
+linha 4    | ATRIBUICAO            | =
+linha 4    | INTEIRO               | 5                      => 5
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | KEYWORD               | fim
+Total de tokens/eventos: 12 | Erros: 1

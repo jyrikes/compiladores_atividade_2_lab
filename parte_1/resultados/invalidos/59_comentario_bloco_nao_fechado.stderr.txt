@@ -1,0 +1,1 @@
+linha 1 | ERRO_LEXICO: comentario de bloco nao fechado [/* ...]

@@ -1,0 +1,150 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 3    | KEYWORD               | texto
+linha 3    | IDENTIFICADOR         | nome
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | KEYWORD               | real
+linha 4    | IDENTIFICADOR         | nota1
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | KEYWORD               | real
+linha 5    | IDENTIFICADOR         | nota2
+linha 5    | FIM_INSTRUCAO         | $
+linha 6    | KEYWORD               | real
+linha 6    | IDENTIFICADOR         | nota3
+linha 6    | FIM_INSTRUCAO         | $
+linha 7    | KEYWORD               | real
+linha 7    | IDENTIFICADOR         | media
+linha 7    | FIM_INSTRUCAO         | $
+linha 8    | KEYWORD               | inteiro
+linha 8    | IDENTIFICADOR         | faltas
+linha 8    | FIM_INSTRUCAO         | $
+linha 9    | KEYWORD               | booleano
+linha 9    | IDENTIFICADOR         | aprovado
+linha 9    | FIM_INSTRUCAO         | $
+linha 11   | IDENTIFICADOR         | nome
+linha 11   | ATRIBUICAO            | =
+linha 11   | TEXTO                 | ’Carlos’
+linha 11   | FIM_INSTRUCAO         | $
+linha 13   | IDENTIFICADOR         | nota1
+linha 13   | ATRIBUICAO            | =
+linha 13   | REAL                  | 8,5                    => 8.5
+linha 13   | FIM_INSTRUCAO         | $
+linha 14   | IDENTIFICADOR         | nota2
+linha 14   | ATRIBUICAO            | =
+linha 14   | REAL                  | 7,0                    => 7
+linha 14   | FIM_INSTRUCAO         | $
+linha 15   | IDENTIFICADOR         | nota3
+linha 15   | ATRIBUICAO            | =
+linha 15   | REAL                  | 9,0                    => 9
+linha 15   | FIM_INSTRUCAO         | $
+linha 17   | IDENTIFICADOR         | faltas
+linha 17   | ATRIBUICAO            | =
+linha 17   | INTEIRO               | 3                      => 3
+linha 17   | FIM_INSTRUCAO         | $
+linha 19   | IDENTIFICADOR         | media
+linha 19   | ATRIBUICAO            | =
+linha 19   | DELIMITADOR           | (
+linha 19   | IDENTIFICADOR         | nota1
+linha 19   | ARITMETICO            | +
+linha 19   | IDENTIFICADOR         | nota2
+linha 19   | ARITMETICO            | +
+linha 19   | IDENTIFICADOR         | nota3
+linha 19   | DELIMITADOR           | )
+linha 19   | ARITMETICO            | /
+linha 19   | REAL                  | 3,0                    => 3
+linha 19   | FIM_INSTRUCAO         | $
+linha 21   | IDENTIFICADOR         | aprovado
+linha 21   | ATRIBUICAO            | =
+linha 21   | KEYWORD               | nao
+linha 21   | FIM_INSTRUCAO         | $
+linha 23   | KEYWORD               | se
+linha 23   | DELIMITADOR           | [
+linha 23   | IDENTIFICADOR         | media
+linha 23   | RELACIONAL            | >=
+linha 23   | REAL                  | 7,0                    => 7
+linha 23   | LOGICO                | &&
+linha 23   | IDENTIFICADOR         | faltas
+linha 23   | RELACIONAL            | <=
+linha 23   | INTEIRO               | 10                     => 10
+linha 23   | DELIMITADOR           | ]
+linha 23   | KEYWORD               | faz
+linha 23   | DELIMITADOR           | {
+linha 25   | IDENTIFICADOR         | aprovado
+linha 25   | ATRIBUICAO            | =
+linha 25   | KEYWORD               | sim
+linha 25   | FIM_INSTRUCAO         | $
+linha 27   | KEYWORD               | mostre
+linha 27   | DELIMITADOR           | (
+linha 27   | TEXTO                 | ’Aluno aprovado.’
+linha 27   | DELIMITADOR           | )
+linha 27   | FIM_INSTRUCAO         | $
+linha 28   | KEYWORD               | mostre
+linha 28   | DELIMITADOR           | (
+linha 28   | IDENTIFICADOR         | nome
+linha 28   | DELIMITADOR           | )
+linha 28   | FIM_INSTRUCAO         | $
+linha 29   | KEYWORD               | mostre
+linha 29   | DELIMITADOR           | (
+linha 29   | IDENTIFICADOR         | media
+linha 29   | DELIMITADOR           | )
+linha 29   | FIM_INSTRUCAO         | $
+linha 31   | DELIMITADOR           | }
+linha 31   | KEYWORD               | senao
+linha 31   | DELIMITADOR           | {
+linha 33   | IDENTIFICADOR         | aprovado
+linha 33   | ATRIBUICAO            | =
+linha 33   | KEYWORD               | nao
+linha 33   | FIM_INSTRUCAO         | $
+linha 35   | KEYWORD               | mostre
+linha 35   | DELIMITADOR           | (
+linha 35   | TEXTO                 | ’Aluno reprovado.’
+linha 35   | DELIMITADOR           | )
+linha 35   | FIM_INSTRUCAO         | $
+linha 36   | KEYWORD               | mostre
+linha 36   | DELIMITADOR           | (
+linha 36   | IDENTIFICADOR         | nome
+linha 36   | DELIMITADOR           | )
+linha 36   | FIM_INSTRUCAO         | $
+linha 37   | KEYWORD               | mostre
+linha 37   | DELIMITADOR           | (
+linha 37   | IDENTIFICADOR         | media
+linha 37   | DELIMITADOR           | )
+linha 37   | FIM_INSTRUCAO         | $
+linha 38   | DELIMITADOR           | }
+linha 40   | KEYWORD               | se
+linha 40   | DELIMITADOR           | [
+linha 40   | IDENTIFICADOR         | media
+linha 40   | RELACIONAL            | ==
+linha 40   | REAL                  | 10,0                   => 10
+linha 40   | LOGICO                | ||
+linha 40   | IDENTIFICADOR         | faltas
+linha 40   | RELACIONAL            | ==
+linha 40   | INTEIRO               | 0                      => 0
+linha 40   | DELIMITADOR           | ]
+linha 40   | KEYWORD               | faz
+linha 40   | DELIMITADOR           | {
+linha 41   | KEYWORD               | mostre
+linha 41   | DELIMITADOR           | (
+linha 41   | TEXTO                 | ’Excelente resultado!’
+linha 41   | DELIMITADOR           | )
+linha 41   | FIM_INSTRUCAO         | $
+linha 42   | DELIMITADOR           | }
+linha 44   | KEYWORD               | se
+linha 44   | DELIMITADOR           | [
+linha 44   | LOGICO                | !
+linha 44   | IDENTIFICADOR         | aprovado
+linha 44   | LOGICO                | &&
+linha 44   | IDENTIFICADOR         | media
+linha 44   | RELACIONAL            | >
+linha 44   | REAL                  | 0,0                    => 0
+linha 44   | DELIMITADOR           | ]
+linha 44   | KEYWORD               | faz
+linha 44   | DELIMITADOR           | {
+linha 45   | KEYWORD               | mostre
+linha 45   | DELIMITADOR           | (
+linha 45   | TEXTO                 | ’Verificar recuperacao.’
+linha 45   | DELIMITADOR           | )
+linha 45   | FIM_INSTRUCAO         | $
+linha 46   | DELIMITADOR           | }
+linha 48   | KEYWORD               | fim
+Total de tokens/eventos: 148 | Erros: 0

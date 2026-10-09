@@ -1,0 +1,11 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | real
+linha 2    | IDENTIFICADOR         | n
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | IDENTIFICADOR         | n
+linha 3    | ATRIBUICAO            | =
+linha 3    | ERRO_LEXICO: sufixo invalido no numero real | 3,14abc
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | KEYWORD               | fim
+Total de tokens/eventos: 9 | Erros: 1

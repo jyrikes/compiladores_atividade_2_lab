@@ -1,0 +1,15 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | mensagem
+linha 1    | ATRIBUICAO            | =
+linha 1    | TEMPLATE_ABRE         | `
+linha 1    | TEMPLATE_TEXTO        | Ola mundo
+linha 1    | TEMPLATE_FECHA        | `
+linha 1    | PONTO_VIRGULA         | ;
+linha 2    | KEYWORD               | const
+linha 2    | IDENTIFICADOR         | vazio
+linha 2    | ATRIBUICAO            | =
+linha 2    | TEMPLATE_ABRE         | `
+linha 2    | TEMPLATE_FECHA        | `
+linha 2    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 13 | Erros: 0

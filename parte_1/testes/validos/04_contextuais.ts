@@ -1,0 +1,1 @@
+abstract accessor as assert asserts any async await bigint boolean constructor declare defer from get global immediate infer intrinsic is keyof module namespace never number object of out override readonly require satisfies set source string symbol type undefined unique unknown using

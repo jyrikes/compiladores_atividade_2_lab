@@ -1,0 +1,11 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | RESERVADA_RESTRITA    | implements
+linha 1    | RESERVADA_RESTRITA    | interface
+linha 1    | RESERVADA_RESTRITA    | let
+linha 1    | RESERVADA_RESTRITA    | package
+linha 1    | RESERVADA_RESTRITA    | private
+linha 1    | RESERVADA_RESTRITA    | protected
+linha 1    | RESERVADA_RESTRITA    | public
+linha 1    | RESERVADA_RESTRITA    | static
+linha 1    | RESERVADA_RESTRITA    | yield
+Total de tokens/eventos: 9 | Erros: 0

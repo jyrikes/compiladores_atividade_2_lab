@@ -1,0 +1,16 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | texto
+linha 2    | IDENTIFICADOR         | frase
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | IDENTIFICADOR         | frase
+linha 3    | ATRIBUICAO            | =
+linha 3    | TEXTO                 | ’#coment nao inicia comentario dentro do texto: {--- 3,14 }’
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | KEYWORD               | mostre
+linha 4    | DELIMITADOR           | (
+linha 4    | IDENTIFICADOR         | frase
+linha 4    | DELIMITADOR           | )
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | KEYWORD               | fim
+Total de tokens/eventos: 14 | Erros: 0

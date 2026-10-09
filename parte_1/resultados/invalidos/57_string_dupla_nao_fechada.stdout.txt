@@ -1,0 +1,5 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | KEYWORD               | const
+linha 1    | IDENTIFICADOR         | nome
+linha 1    | ATRIBUICAO            | =
+Total de tokens/eventos: 4 | Erros: 1

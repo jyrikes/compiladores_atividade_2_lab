@@ -1,0 +1,179 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 3    | KEYWORD               | inteiro
+linha 3    | IDENTIFICADOR         | estoque
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | KEYWORD               | inteiro
+linha 4    | IDENTIFICADOR         | quantidade
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | KEYWORD               | inteiro
+linha 5    | IDENTIFICADOR         | limite
+linha 5    | FIM_INSTRUCAO         | $
+linha 6    | KEYWORD               | inteiro
+linha 6    | IDENTIFICADOR         | contador
+linha 6    | FIM_INSTRUCAO         | $
+linha 7    | KEYWORD               | inteiro
+linha 7    | IDENTIFICADOR         | i
+linha 7    | FIM_INSTRUCAO         | $
+linha 8    | KEYWORD               | real
+linha 8    | IDENTIFICADOR         | preco
+linha 8    | FIM_INSTRUCAO         | $
+linha 9    | KEYWORD               | real
+linha 9    | IDENTIFICADOR         | total
+linha 9    | FIM_INSTRUCAO         | $
+linha 10   | KEYWORD               | texto
+linha 10   | IDENTIFICADOR         | produto
+linha 10   | FIM_INSTRUCAO         | $
+linha 12   | IDENTIFICADOR         | produto
+linha 12   | ATRIBUICAO            | =
+linha 12   | TEXTO                 | ’Teclado’
+linha 12   | FIM_INSTRUCAO         | $
+linha 13   | IDENTIFICADOR         | estoque
+linha 13   | ATRIBUICAO            | =
+linha 13   | INTEIRO               | 25                     => 25
+linha 13   | FIM_INSTRUCAO         | $
+linha 14   | IDENTIFICADOR         | quantidade
+linha 14   | ATRIBUICAO            | =
+linha 14   | INTEIRO               | 3                      => 3
+linha 14   | FIM_INSTRUCAO         | $
+linha 15   | IDENTIFICADOR         | limite
+linha 15   | ATRIBUICAO            | =
+linha 15   | INTEIRO               | 10                     => 10
+linha 15   | FIM_INSTRUCAO         | $
+linha 16   | IDENTIFICADOR         | contador
+linha 16   | ATRIBUICAO            | =
+linha 16   | INTEIRO               | 0                      => 0
+linha 16   | FIM_INSTRUCAO         | $
+linha 17   | IDENTIFICADOR         | preco
+linha 17   | ATRIBUICAO            | =
+linha 17   | REAL                  | 149,90                 => 149.9
+linha 17   | FIM_INSTRUCAO         | $
+linha 18   | IDENTIFICADOR         | total
+linha 18   | ATRIBUICAO            | =
+linha 18   | REAL                  | 0,0                    => 0
+linha 18   | FIM_INSTRUCAO         | $
+linha 20   | COMENTARIO_BLOCO      | {---\n         Inicio do processamento do estoque.\n         O sistema verifica a quantidade disponivel\n         e calcula o valor da compra.\n      ---}
+linha 26   | KEYWORD               | se
+linha 26   | DELIMITADOR           | [
+linha 26   | IDENTIFICADOR         | estoque
+linha 26   | RELACIONAL            | >=
+linha 26   | IDENTIFICADOR         | quantidade
+linha 26   | DELIMITADOR           | ]
+linha 26   | KEYWORD               | faz
+linha 26   | DELIMITADOR           | {
+linha 28   | IDENTIFICADOR         | estoque
+linha 28   | ATRIBUICAO            | =
+linha 28   | IDENTIFICADOR         | estoque
+linha 28   | ARITMETICO            | -
+linha 28   | IDENTIFICADOR         | quantidade
+linha 28   | FIM_INSTRUCAO         | $
+linha 29   | IDENTIFICADOR         | total
+linha 29   | ATRIBUICAO            | =
+linha 29   | IDENTIFICADOR         | quantidade
+linha 29   | ARITMETICO            | *
+linha 29   | IDENTIFICADOR         | preco
+linha 29   | FIM_INSTRUCAO         | $
+linha 31   | KEYWORD               | mostre
+linha 31   | DELIMITADOR           | (
+linha 31   | TEXTO                 | ’Produto: ’
+linha 31   | DELIMITADOR           | )
+linha 31   | FIM_INSTRUCAO         | $
+linha 32   | KEYWORD               | mostre
+linha 32   | DELIMITADOR           | (
+linha 32   | IDENTIFICADOR         | produto
+linha 32   | DELIMITADOR           | )
+linha 32   | FIM_INSTRUCAO         | $
+linha 34   | KEYWORD               | mostre
+linha 34   | DELIMITADOR           | (
+linha 34   | TEXTO                 | ’Valor total: ’
+linha 34   | DELIMITADOR           | )
+linha 34   | FIM_INSTRUCAO         | $
+linha 35   | KEYWORD               | mostre
+linha 35   | DELIMITADOR           | (
+linha 35   | IDENTIFICADOR         | total
+linha 35   | DELIMITADOR           | )
+linha 35   | FIM_INSTRUCAO         | $
+linha 37   | DELIMITADOR           | }
+linha 37   | KEYWORD               | senao
+linha 37   | DELIMITADOR           | {
+linha 38   | KEYWORD               | mostre
+linha 38   | DELIMITADOR           | (
+linha 38   | TEXTO                 | ’Estoque insuficiente.’
+linha 38   | DELIMITADOR           | )
+linha 38   | FIM_INSTRUCAO         | $
+linha 39   | DELIMITADOR           | }
+linha 41   | IDENTIFICADOR         | repita_enquanto
+linha 41   | DELIMITADOR           | [
+linha 41   | IDENTIFICADOR         | contador
+linha 41   | RELACIONAL            | <
+linha 41   | INTEIRO               | 5                      => 5
+linha 41   | DELIMITADOR           | ]
+linha 41   | DELIMITADOR           | {
+linha 43   | IDENTIFICADOR         | contador
+linha 43   | ATRIBUICAO            | =
+linha 43   | IDENTIFICADOR         | contador
+linha 43   | ARITMETICO            | +
+linha 43   | INTEIRO               | 1                      => 1
+linha 43   | FIM_INSTRUCAO         | $
+linha 44   | KEYWORD               | mostre
+linha 44   | DELIMITADOR           | (
+linha 44   | TEXTO                 | ’Verificando estoque...’
+linha 44   | DELIMITADOR           | )
+linha 44   | FIM_INSTRUCAO         | $
+linha 45   | DELIMITADOR           | }
+linha 47   | KEYWORD               | para
+linha 47   | IDENTIFICADOR         | i
+linha 47   | KEYWORD               | de
+linha 47   | INTEIRO               | 1                      => 1
+linha 47   | KEYWORD               | ate
+linha 47   | INTEIRO               | 3                      => 3
+linha 47   | KEYWORD               | faca
+linha 47   | DELIMITADOR           | {
+linha 48   | KEYWORD               | mostre
+linha 48   | DELIMITADOR           | (
+linha 48   | TEXTO                 | ’Lote conferido: ’
+linha 48   | DELIMITADOR           | )
+linha 48   | FIM_INSTRUCAO         | $
+linha 49   | KEYWORD               | mostre
+linha 49   | DELIMITADOR           | (
+linha 49   | IDENTIFICADOR         | i
+linha 49   | DELIMITADOR           | )
+linha 49   | FIM_INSTRUCAO         | $
+linha 50   | DELIMITADOR           | }
+linha 52   | KEYWORD               | se
+linha 52   | DELIMITADOR           | [
+linha 52   | IDENTIFICADOR         | estoque
+linha 52   | ARITMETICO            | %
+linha 52   | INTEIRO               | 2                      => 2
+linha 52   | RELACIONAL            | ==
+linha 52   | INTEIRO               | 0                      => 0
+linha 52   | DELIMITADOR           | ]
+linha 52   | KEYWORD               | faz
+linha 52   | DELIMITADOR           | {
+linha 53   | KEYWORD               | mostre
+linha 53   | DELIMITADOR           | (
+linha 53   | TEXTO                 | ’Quantidade par em estoque.’
+linha 53   | DELIMITADOR           | )
+linha 53   | FIM_INSTRUCAO         | $
+linha 54   | DELIMITADOR           | }
+linha 56   | COMENTARIO_LINHA      | #coment verificacao final
+linha 57   | KEYWORD               | se
+linha 57   | DELIMITADOR           | [
+linha 57   | IDENTIFICADOR         | estoque
+linha 57   | RELACIONAL            | <=
+linha 57   | IDENTIFICADOR         | limite
+linha 57   | LOGICO                | &&
+linha 57   | IDENTIFICADOR         | estoque
+linha 57   | RELACIONAL            | !=
+linha 57   | IDENTIFICADOR         | quantidade
+linha 57   | DELIMITADOR           | ]
+linha 57   | KEYWORD               | faz
+linha 57   | DELIMITADOR           | {
+linha 58   | KEYWORD               | mostre
+linha 58   | DELIMITADOR           | (
+linha 58   | TEXTO                 | ’Atencao: estoque baixo.’
+linha 58   | DELIMITADOR           | )
+linha 58   | FIM_INSTRUCAO         | $
+linha 59   | DELIMITADOR           | }
+linha 61   | KEYWORD               | fim
+Total de tokens/eventos: 177 | Erros: 0

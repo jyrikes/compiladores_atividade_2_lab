@@ -1,0 +1,49 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | inteiro
+linha 2    | ERRO_LEXICO: identificador nao pode iniciar com numero | 123nome
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | KEYWORD               | real
+linha 3    | IDENTIFICADOR         | x
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | IDENTIFICADOR         | x
+linha 4    | ATRIBUICAO            | =
+linha 4    | ERRO_LEXICO: numero real com multiplas virgulas | 10,25,30
+linha 4    | FIM_INSTRUCAO         | $
+linha 5    | IDENTIFICADOR         | idade
+linha 5    | ATRIBUICAO            | =
+linha 5    | INTEIRO               | 20                     => 20
+linha 5    | ERRO_LEXICO: caractere nao pertence a MiniLang | @
+linha 5    | INTEIRO               | 5                      => 5
+linha 5    | FIM_INSTRUCAO         | $
+linha 6    | IDENTIFICADOR         | preco
+linha 6    | ATRIBUICAO            | =
+linha 6    | ERRO_LEXICO: ponto decimal nao permitido: use virgula | 3.14
+linha 6    | FIM_INSTRUCAO         | $
+linha 7    | IDENTIFICADOR         | total
+linha 7    | ATRIBUICAO            | =
+linha 7    | IDENTIFICADOR         | preco
+linha 7    | ERRO_LEXICO: virgula fora de literal real | ,
+linha 7    | INTEIRO               | 2                      => 2
+linha 7    | FIM_INSTRUCAO         | $
+linha 8    | KEYWORD               | mostre
+linha 8    | DELIMITADOR           | (
+linha 8    | TEXTO                 | ’fim do calculo’
+linha 8    | DELIMITADOR           | )
+linha 8    | FIM_INSTRUCAO         | $
+linha 8    | ERRO_LEXICO: marcador de comentario invalido | #
+linha 9    | KEYWORD               | texto
+linha 9    | IDENTIFICADOR         | s
+linha 9    | FIM_INSTRUCAO         | $
+linha 10   | IDENTIFICADOR         | s
+linha 10   | ATRIBUICAO            | =
+linha 10   | ERRO_LEXICO: aspas duplas nao permitidas | "aspas duplas nao existem aqui"
+linha 10   | FIM_INSTRUCAO         | $
+linha 11   | KEYWORD               | texto
+linha 11   | IDENTIFICADOR         | t
+linha 11   | FIM_INSTRUCAO         | $
+linha 12   | IDENTIFICADOR         | t
+linha 12   | ATRIBUICAO            | =
+linha 12   | ERRO_LEXICO: string nao fechada antes de nova linha | ’esta string nao termina$
+linha 13   | ERRO_LEXICO: comentario de bloco nao fechado | {---\n       comentario sem fechamento\nfim\n
+Total de tokens/eventos: 47 | Erros: 9

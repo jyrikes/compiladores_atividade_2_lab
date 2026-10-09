@@ -1,0 +1,30 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | RESERVADA_RESTRITA    | let
+linha 1    | IDENTIFICADOR         | a
+linha 1    | ATRIBUICAO            | =
+linha 1    | NUMBER                | 1                      => 1
+linha 1    | ATRIBUICAO            | >>>=
+linha 1    | NUMBER                | 2                      => 2
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | RESERVADA_RESTRITA    | let
+linha 1    | IDENTIFICADOR         | b
+linha 1    | ATRIBUICAO            | =
+linha 1    | NUMBER                | 1                      => 1
+linha 1    | IGUALDADE             | !==
+linha 1    | NUMBER                | 2                      => 2
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | RESERVADA_RESTRITA    | let
+linha 1    | IDENTIFICADOR         | c
+linha 1    | ATRIBUICAO            | =
+linha 1    | NUMBER                | 1                      => 1
+linha 1    | ARITMETICO            | **
+linha 1    | NUMBER                | 2                      => 2
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | RESERVADA_RESTRITA    | let
+linha 1    | IDENTIFICADOR         | d
+linha 1    | ATRIBUICAO            | =
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ACESSO                | ?.
+linha 1    | IDENTIFICADOR         | y
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 28 | Erros: 0

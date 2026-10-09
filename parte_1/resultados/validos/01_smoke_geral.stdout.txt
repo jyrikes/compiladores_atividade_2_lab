@@ -1,0 +1,79 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | HASHBANG              | #!/usr/bin/env node
+linha 2    | COMENTARIO_LINHA      | // Comentario TypeScript
+linha 3    | KEYWORD               | const
+linha 3    | IDENTIFICADOR         | nome
+linha 3    | CONDICIONAL           | :
+linha 3    | CONTEXTUAL            | string
+linha 3    | ATRIBUICAO            | =
+linha 3    | STRING                | "Ana\nMaria"
+linha 3    | PONTO_VIRGULA         | ;
+linha 4    | RESERVADA_RESTRITA    | let
+linha 4    | IDENTIFICADOR         | n
+linha 4    | ATRIBUICAO            | =
+linha 4    | NUMBER                | 1_000                  => 1000
+linha 4    | ARITMETICO            | +
+linha 4    | NUMBER                | 2.5e-3                 => 0.0025000000000000001
+linha 4    | PONTO_VIRGULA         | ;
+linha 5    | RESERVADA_RESTRITA    | let
+linha 5    | IDENTIFICADOR         | hex
+linha 5    | ATRIBUICAO            | =
+linha 5    | NUMBER                | 0xFF                   => 255
+linha 5    | DELIMITADOR           | ,
+linha 5    | IDENTIFICADOR         | bin
+linha 5    | ATRIBUICAO            | =
+linha 5    | NUMBER                | 0b1010                 => 10
+linha 5    | DELIMITADOR           | ,
+linha 5    | IDENTIFICADOR         | oct
+linha 5    | ATRIBUICAO            | =
+linha 5    | NUMBER                | 0o755                  => 493
+linha 5    | PONTO_VIRGULA         | ;
+linha 6    | RESERVADA_RESTRITA    | let
+linha 6    | IDENTIFICADOR         | enorme
+linha 6    | ATRIBUICAO            | =
+linha 6    | BIGINT                | 12345678901234567890n  => 12345678901234567890 (sem perda)
+linha 6    | PONTO_VIRGULA         | ;
+linha 7    | RESERVADA_RESTRITA    | interface
+linha 7    | IDENTIFICADOR         | Pessoa
+linha 7    | DELIMITADOR           | {
+linha 7    | IDENTIFICADOR         | idade
+linha 7    | CONDICIONAL           | :
+linha 7    | CONTEXTUAL            | number
+linha 7    | PONTO_VIRGULA         | ;
+linha 7    | DELIMITADOR           | }
+linha 8    | KEYWORD               | const
+linha 8    | IDENTIFICADOR         | msg
+linha 8    | ATRIBUICAO            | =
+linha 8    | TEMPLATE_ABRE         | `
+linha 8    | TEMPLATE_TEXTO        | Ola, 
+linha 8    | INTERPOLACAO_ABRE     | ${
+linha 8    | IDENTIFICADOR         | nome
+linha 8    | INTERPOLACAO_FECHA    | }
+linha 8    | TEMPLATE_TEXTO        | ! Numero: 
+linha 8    | INTERPOLACAO_ABRE     | ${
+linha 8    | IDENTIFICADOR         | n
+linha 8    | ARITMETICO            | +
+linha 8    | NUMBER                | 2                      => 2
+linha 8    | INTERPOLACAO_FECHA    | }
+linha 8    | TEMPLATE_FECHA        | `
+linha 8    | PONTO_VIRGULA         | ;
+linha 9    | KEYWORD               | class
+linha 9    | IDENTIFICADOR         | Conta
+linha 9    | DELIMITADOR           | {
+linha 9    | IDENTIFICADOR_PRIVADO | #saldo
+linha 9    | ATRIBUICAO            | =
+linha 9    | NUMBER                | 10                     => 10
+linha 9    | PONTO_VIRGULA         | ;
+linha 9    | DELIMITADOR           | }
+linha 10   | RESERVADA_RESTRITA    | let
+linha 10   | IDENTIFICADOR         | check
+linha 10   | ATRIBUICAO            | =
+linha 10   | IDENTIFICADOR         | n
+linha 10   | RELACIONAL            | >=
+linha 10   | NUMBER                | 1                      => 1
+linha 10   | LOGICO                | &&
+linha 10   | IDENTIFICADOR         | hex
+linha 10   | IGUALDADE             | !==
+linha 10   | NUMBER                | 0                      => 0
+linha 10   | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 77 | Erros: 0

@@ -1,0 +1,28 @@
+=== ANALISADOR LEXICO DA MINILANG ===
+linha 1    | KEYWORD               | inicio
+linha 2    | KEYWORD               | inteiro
+linha 2    | IDENTIFICADOR         | faca2
+linha 2    | FIM_INSTRUCAO         | $
+linha 3    | KEYWORD               | inteiro
+linha 3    | IDENTIFICADOR         | repita_enquanto
+linha 3    | FIM_INSTRUCAO         | $
+linha 4    | KEYWORD               | se
+linha 4    | DELIMITADOR           | [
+linha 4    | IDENTIFICADOR         | faca2
+linha 4    | RELACIONAL            | <=
+linha 4    | INTEIRO               | 10                     => 10
+linha 4    | LOGICO                | &&
+linha 4    | IDENTIFICADOR         | repita_enquanto
+linha 4    | RELACIONAL            | >=
+linha 4    | INTEIRO               | 5                      => 5
+linha 4    | DELIMITADOR           | ]
+linha 4    | KEYWORD               | faz
+linha 4    | DELIMITADOR           | {
+linha 5    | KEYWORD               | mostre
+linha 5    | DELIMITADOR           | (
+linha 5    | TEXTO                 | ’maior casamento’
+linha 5    | DELIMITADOR           | )
+linha 5    | FIM_INSTRUCAO         | $
+linha 6    | DELIMITADOR           | }
+linha 7    | KEYWORD               | fim
+Total de tokens/eventos: 26 | Erros: 0

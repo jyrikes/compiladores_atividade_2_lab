@@ -1,0 +1,8 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | HASHBANG              | #!/usr/bin/env node
+linha 2    | KEYWORD               | const
+linha 2    | IDENTIFICADOR         | valor
+linha 2    | ATRIBUICAO            | =
+linha 2    | NUMBER                | 42                     => 42
+linha 2    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 6 | Erros: 0

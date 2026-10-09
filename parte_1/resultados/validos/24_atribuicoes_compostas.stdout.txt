@@ -1,0 +1,67 @@
+=== ANALISADOR LEXICO DE TYPESCRIPT ===
+linha 1    | RESERVADA_RESTRITA    | let
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | =
+linha 1    | NUMBER                | 1                      => 1
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | +=
+linha 1    | NUMBER                | 2                      => 2
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | -=
+linha 1    | NUMBER                | 3                      => 3
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | *=
+linha 1    | NUMBER                | 4                      => 4
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | /=
+linha 1    | NUMBER                | 5                      => 5
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | %=
+linha 1    | NUMBER                | 6                      => 6
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | **=
+linha 1    | NUMBER                | 7                      => 7
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | &=
+linha 1    | NUMBER                | 8                      => 8
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | |=
+linha 1    | NUMBER                | 9                      => 9
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | ^=
+linha 1    | NUMBER                | 10                     => 10
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | <<=
+linha 1    | NUMBER                | 1                      => 1
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | >>=
+linha 1    | NUMBER                | 1                      => 1
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | >>>=
+linha 1    | NUMBER                | 1                      => 1
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | &&=
+linha 1    | LITERAL               | true
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | ||=
+linha 1    | LITERAL               | false
+linha 1    | PONTO_VIRGULA         | ;
+linha 1    | IDENTIFICADOR         | x
+linha 1    | ATRIBUICAO            | ??=
+linha 1    | NUMBER                | 0                      => 0
+linha 1    | PONTO_VIRGULA         | ;
+Total de tokens/eventos: 65 | Erros: 0
